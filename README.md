@@ -4,11 +4,6 @@
 
 Um projeto de estudo focado na implementação de um sistema de autenticação robusto em Next.js, incluindo validação de credenciais, gerenciamento de estado global com Context API e um sistema de temas (claro/escuro).
 
-## 📸 Prévia da Aplicação
-
-*(Adicione aqui um screenshot ou GIF da sua aplicação funcionando!)*
-
-![Prévia da Aplicação](caminho/para/sua/imagem.png)
 
 ---
 
@@ -81,3 +76,4 @@ Para facilitar a verificação, utilize as seguintes credenciais:
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
