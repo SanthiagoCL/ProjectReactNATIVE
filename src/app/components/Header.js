@@ -1,7 +1,8 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import Cookies from 'js-cookie';
-import ThemeToggleButton from './ThemeToggleButton'; 
+import ThemeToggleButton from './ThemeToggleButton';
+
 
 export default function Header() {
     const router = useRouter();
@@ -12,18 +13,18 @@ export default function Header() {
     };
 
     return (
-        <header className="bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white p-4 flex justify-between items-center shadow-md">
-            <h1 className="text-xl font-bold">Meu App</h1>
+        <header className="bg-gray-100 text-gray-900 dark:bg-gray-950 dark:text-white p-4 flex justify-between items-center shadow-md">
+            <h1 className="text-xl font-bold">ReactNativeAPP</h1>
 
             {/* Container para os botões */}
             <div className="flex items-center gap-4">
 
-                <ThemeToggleButton /> 
+                <ThemeToggleButton/> 
                 
                 <button px onClick={() => router.push('/default')}
                     className='px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors'
                 >
-                    Home
+                    Tela Padrão
                 </button>
 
                 <button 
@@ -32,7 +33,7 @@ export default function Header() {
                 >
                 
 
-                    Sair
+                 Sair
                 </button>
             </div>
         </header>

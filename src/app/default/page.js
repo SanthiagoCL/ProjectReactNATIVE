@@ -29,8 +29,8 @@ export default function Default() {
     <ThemeProvider>
       <AppLayout>
         {/* O conteúdo da sua página vai aqui */}
-        <h2 className="text-2xl font-bold mb-4">Página Principal</h2>
-        <p>Use o botão no header para trocar o tema.</p>
+        <h2 className="text-2xl font-bold mb-4">Essa é a pagina inicial, seja bem vindo! </h2>
+        <p>Use o botão no header para trocar o tema. "Não Funciona"</p>
       </AppLayout>
     </ThemeProvider>
   );

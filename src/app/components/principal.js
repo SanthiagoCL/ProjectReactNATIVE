@@ -6,7 +6,7 @@ function Index () {
     return(
         <div>
             <h1>
-               <Texto4 cor='white' >Seja bem vindo a tela principal do site!</Texto4> 
+               <Texto4 cor='white'>Seja bem vindo a tela principal do site!</Texto4> 
             </h1>
         </div>
     )

@@ -1,15 +1,14 @@
 'use client';
 
-import { useTheme } from '../contexts/ThemeContext'; // Ajuste o caminho se necessário
+import { useTheme } from '../contexts/ThemeContext'; // O caminho para o seu contexto
 
 export default function ThemeToggleButton() {
   const { isDark, toggleTheme } = useTheme();
-  const { px } = require('tailwindcss/defaultTheme');
 
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-md bg-gray-200 dark:bg-gray-700 text-black dark:text-white"
+      className="p-2 rounded-md bg-white dark:bg-gray-900 text-black dark:text-white"
     >
       {isDark ? '☀️' : '🌙'}
     </button>
