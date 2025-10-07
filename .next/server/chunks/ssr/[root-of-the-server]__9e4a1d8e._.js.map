@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/thiag/Documents/PROJETO%20CURSO/Next/ProjectReactNATIVE/src/app/components/Loading.js"],"sourcesContent":["\"use client\";\r\n\r\nexport default function Loading({ message = 'Carregando...' }) {\r\n  return (\r\n    <div className=\"fixed inset-0 bg-black/40 flex items-center justify-center z-50\">\r\n      <div className=\"p-6 bg-white dark:bg-gray-800 rounded-lg flex flex-col items-center gap-4 shadow-lg\">\r\n        <div className=\"w-12 h-12 border-4 border-gray-300 dark:border-gray-600 border-t-transparent rounded-full animate-spin\" />\r\n        <p className=\"text-gray-900 dark:text-gray-100\">{message}</p>\r\n        \r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;AAAA;;AAEe,SAAS,QAAQ,EAAE,UAAU,eAAe,EAAE;IAC3D,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAI,WAAU;;;;;;8BACf,8OAAC;oBAAE,WAAU;8BAAoC;;;;;;;;;;;;;;;;;AAKzD","debugId":null}}]
+}

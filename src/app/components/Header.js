@@ -1,15 +1,22 @@
-'use client';
+"use client";
 import { useRouter } from 'next/navigation';
 import Cookies from 'js-cookie';
+import { useState } from 'react';
 import ThemeToggleButton from './ThemeToggleButton';
+import Loading from './Loading';
 
 
 export default function Header() {
     const router = useRouter();
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleLogout = () => {
-        Cookies.remove('authToken');
-        router.push('/login');
+                Cookies.remove('authToken');
+                // show loading overlay briefly while navigating
+                setIsLoading(true);
+                setTimeout(() => {
+                    router.push('/login');
+                }, 250);
     };
 
     return (
@@ -36,6 +43,7 @@ export default function Header() {
                  Sair
                 </button>
             </div>
+            {isLoading && <Loading message="Saindo..." />}
         </header>
     );
 }

@@ -1,8 +1,11 @@
 'use client';
-
+import { ThemeProvider, useTheme } from '../contexts/ThemeContext';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Cookies from 'js-cookie';
+
+
+
 
 export default function Login() {
   const router = useRouter();
